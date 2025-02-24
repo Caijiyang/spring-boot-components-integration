@@ -1,0 +1,4 @@
+spring-boot-components-integration is running!
+
+Application Version: ${spring-boot-components-integration.version}
+Spring Boot Version: ${spring-boot.version}
