@@ -3,8 +3,6 @@ package org.felixcjy.system.service.impl;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import org.felixcjy.common.domain.common.WebResult;
-import org.felixcjy.common.domain.dto.PageDTO;
 import org.felixcjy.system.domain.entity.SysRole;
 import org.felixcjy.system.mapper.SysRoleMapper;
 import org.felixcjy.system.service.SysRoleService;

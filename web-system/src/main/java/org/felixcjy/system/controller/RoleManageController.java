@@ -30,7 +30,7 @@ public class RoleManageController {
     public WebResult<IPage<SysRole>> getRoleList(@RequestParam int pageNum, @RequestParam int pageSize) {
         try {
             IPage<SysRole> roleList = sysRoleService.getRoleList(pageNum, pageSize);
-            return WebResult.success(roleList).withPage(pageNum,pageSize,roleList.getTotal());
+            return WebResult.success(roleList).withMessage("query role list success.");
         } catch (Exception e) {
             logger.error("RoleManageController getRoleList error,{}", e.getMessage(), e);
             throw new RuntimeException("getRoleList error", e);

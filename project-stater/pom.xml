@@ -33,6 +33,13 @@
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
 
+        <!-- 诊断测试: junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+
         <!-- 引入本地系统模块 -->
         <dependency>
             <groupId>org.felixcjy</groupId>

@@ -36,6 +36,13 @@
         <!--     </exclusions> -->
         <!-- </dependency> -->
 
+        <!-- 诊断测试: junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+
         <!-- Spring Boot 开发者套件 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
