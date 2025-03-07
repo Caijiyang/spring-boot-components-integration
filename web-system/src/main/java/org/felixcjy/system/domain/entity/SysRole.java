@@ -1,6 +1,7 @@
 package org.felixcjy.system.domain.entity;
 
 import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 import java.time.LocalDateTime;
@@ -10,6 +11,7 @@ import java.time.LocalDateTime;
  * @since : 2025/2/24 20:09
  */
 @Data
+@TableName("sys_role")
 public class SysRole {
     /** 角色ID */
     @TableField("role_id")

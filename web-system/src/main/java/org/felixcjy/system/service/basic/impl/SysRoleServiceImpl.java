@@ -1,11 +1,12 @@
-package org.felixcjy.system.service.impl;
-
+package org.felixcjy.system.service.basic.impl;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import lombok.AllArgsConstructor;
 import org.felixcjy.system.domain.entity.SysRole;
 import org.felixcjy.system.mapper.SysRoleMapper;
-import org.felixcjy.system.service.SysRoleService;
+import org.felixcjy.system.service.basic.SysRoleService;
 import org.springframework.stereotype.Service;
 
 /**
@@ -13,12 +14,9 @@ import org.springframework.stereotype.Service;
  * @since : 2025/2/24 20:14
  */
 @Service
-public class SysRoleServiceImpl implements SysRoleService {
+@AllArgsConstructor
+public class SysRoleServiceImpl extends ServiceImpl<SysRoleMapper, SysRole> implements SysRoleService {
     private final SysRoleMapper sysRoleMapper;
-
-    public SysRoleServiceImpl(SysRoleMapper sysRoleMapper) {
-        this.sysRoleMapper = sysRoleMapper;
-    }
 
     @Override
     public IPage<SysRole> getRoleList(int pageNum, int pageSize) {
