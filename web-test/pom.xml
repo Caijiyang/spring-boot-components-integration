@@ -9,11 +9,11 @@
         <version>0.1</version>
     </parent>
 
-    <artifactId>web-system</artifactId>
+    <artifactId>web-test</artifactId>
     <version>0.1</version>
 
-    <name>web-system</name>
-    <description>系统管理模块</description>
+    <name>web-test</name>
+    <description>Controller 测试模块</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

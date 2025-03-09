@@ -62,6 +62,23 @@ spring:
         wall:
           config:
             multi-statement-allow: true
+  redis:
+    host: 192.168.228.132
+    port: 6379
+    password: Fxsd1100
+    database: 0
+    lettuce:
+      pool:
+        max-active: 8 # 最大活跃连接数
+        max-idle: 8 # 最大空闲连接数
+        min-idle: 0 # 最小空闲连接数
+
+# 启用/禁用 Arthas
+arthas:
+  enabled: true
+  # 设置 Arthas Agent 的通信端口
+  telnet-port: 3658
+  http-port: 8563
 
 mybatis-plus:
   mapper-locations: classpath*:mapper/**/*Mapper.xml

@@ -1,23 +1,22 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.felixcjy</groupId>
   <artifactId>spring-boot-components-integration</artifactId>
-  <version>${spring-boot-components-integration.version}</version>
+  <version>0.1</version>
+  <packaging>pom</packaging> <!-- 标识此项目为父项目 -->
 
   <name>spring-boot-components-integration</name>
   <description>Spring Boot 各类组件使用案例</description>
 
-  <!-- 标识此项目为父项目 -->
-  <packaging>pom</packaging>
-
   <modules>
-    <!-- <module>project-stater</module> -->
-    <!-- <module>project-common</module> -->
-    <!-- <module>web-product</module> -->
-    <!-- <module>web-system</module> -->
-    <!-- <module>integrate-redis</module> -->
+    <module>project-stater</module>
+    <module>project-common</module>
+    <module>web-system</module>
+    <module>web-test</module>
+    <module>integrate-redis</module>
     <!-- <module>integrate-spring-security</module> -->
     <!-- <module>integrate-rabbit-mq</module> -->
     <!-- <module>integrate-xxl-job</module> -->
@@ -25,13 +24,9 @@
     <!-- <module>integrate-quartz</module> -->
     <!-- <module>integrate-actuator</module> -->
     <!-- <module>integrate-spring-boot-admin</module> -->
-    <module>project-stater</module>
-    <module>project-common</module>
-    <module>web-system</module>
   </modules>
 
   <properties>
-    <spring-boot-components-integration.version>1.0-SNAPSHOT</spring-boot-components-integration.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <java.version>1.8</java.version>

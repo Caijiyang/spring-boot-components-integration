@@ -1,16 +1,19 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
         <groupId>org.felixcjy</groupId>
         <artifactId>spring-boot-components-integration</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>0.1</version>
     </parent>
 
     <artifactId>project-stater</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <name>main-web</name>
+    <version>0.1</version>
+    <packaging>jar</packaging>
+
+    <name>project-stater</name>
     <description>项目主要 Web 入口</description>
 
     <dependencies>
@@ -27,34 +30,31 @@
             <scope>runtime</scope>
         </dependency>
 
-        <!-- 工具：诊断测试 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-        </dependency>
-
-        <!-- 诊断测试: junit -->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <scope>test</scope>
-        </dependency>
-
         <!-- 引入本地系统模块 -->
         <dependency>
             <groupId>org.felixcjy</groupId>
-            <artifactId>web-system</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <artifactId>project-common</artifactId>
+            <version>0.1</version>
         </dependency>
 
         <dependency>
             <groupId>org.felixcjy</groupId>
-            <artifactId>project-common</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <artifactId>web-system</artifactId>
+            <version>0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.felixcjy</groupId>
+            <artifactId>web-test</artifactId>
+            <version>0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.felixcjy</groupId>
+            <artifactId>integrate-redis</artifactId>
+            <version>0.1</version>
         </dependency>
     </dependencies>
-
-    <packaging>jar</packaging>
 
     <build>
         <plugins>
