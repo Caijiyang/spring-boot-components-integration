@@ -1,5 +1,6 @@
 package org.felixcjy.test.controller;
 
+import io.swagger.v3.oas.annotations.Hidden;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -98,5 +99,11 @@ public class SwaggerController {
     ) {
         // 业务逻辑
         return Arrays.asList(new UserDTO());
+    }
+
+    @Hidden // 隐藏该接口
+    @GetMapping("/secret")
+    public String secretApi() {
+        return "秘密接口";
     }
 }
