@@ -23,7 +23,8 @@
    - 引入包后添加配置即可
  - [x] MySQL
    - 加入驱动和配置即可。
- - [ ] Swagger
+ - [x] Swagger
+   - 使用 SpringDoc OpenAPI 的方式整合了 Swagger 3 ，在测试模块中包含了使用案例。
 
 缓存
 

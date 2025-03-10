@@ -1,0 +1,22 @@
+package org.felixcjy.common.config;
+
+import io.swagger.v3.oas.models.OpenAPI;
+import io.swagger.v3.oas.models.info.Info;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+/**
+ * @author: Felix(蔡济阳)
+ * @since : 2025/3/10 09:28
+ */
+@Configuration
+public class OpenApiConfig {
+    @Bean
+    public OpenAPI customOpenAPI() {
+        return new OpenAPI()
+                .info(new Info()
+                        .title("多模块 API 文档")
+                        .version("1.0")
+                        .description("Spring Boot 2.7.x + OpenAPI 3"));
+    }
+}
