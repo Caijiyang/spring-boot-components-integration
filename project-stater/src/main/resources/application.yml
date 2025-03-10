@@ -80,6 +80,13 @@ arthas:
   telnet-port: 3658
   http-port: 8563
 
+# Swagger 页面路径
+springdoc:
+  api-docs:
+    path: /v3/api-docs # 修改 API 文档路径（默认 /v3/api-docs）
+  swagger-ui:
+    path: /swagger-ui.html # 修改 Swagger UI 路径
+
 mybatis-plus:
   mapper-locations: classpath*:mapper/**/*Mapper.xml
   typeAliasesPackage: org.felixcjy.**.domain.entity
