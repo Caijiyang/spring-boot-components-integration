@@ -1,5 +1,7 @@
-package org.felixcjy.test.service;
+package org.felixcjy.redis.service.impl;
 
+import lombok.AllArgsConstructor;
+import org.felixcjy.redis.service.RedisService;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
@@ -7,37 +9,35 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @author: Felix(蔡济阳)
- * @since : 2025/3/9 12:16
+ * @since : 2025/3/11 14:10
  */
 @Service
-public class RedisService {
-
+@AllArgsConstructor
+public class RedisServiceImpl implements RedisService {
     private final StringRedisTemplate redisTemplate;
 
-    public RedisService(StringRedisTemplate redisTemplate) {
-        this.redisTemplate = redisTemplate;
-    }
-
+    @Override
     public void setValue(String key, String value) {
         redisTemplate.opsForValue().set(key, value);
     }
 
+    @Override
     public String getValue(String key) {
         return redisTemplate.opsForValue().get(key);
     }
 
+    @Override
     public boolean deleteKey(String key) {
-        Boolean result = redisTemplate.delete(key);
-        return result != null && result;
+        return redisTemplate.delete(key);
     }
 
+    @Override
     public boolean setExpire(String key, long seconds) {
-        Boolean result = redisTemplate.expire(key, seconds, TimeUnit.SECONDS);
-        return result != null && result;
+        return redisTemplate.expire(key, seconds, TimeUnit.SECONDS);
     }
 
-    // 可选：带过期时间的设置方法
-    public void setValueWithExpire(String key, String value, long seconds) {
+    @Override
+    public void setValueWithExpire(String key, String value, long seconds)  {
         redisTemplate.opsForValue().set(key, value, seconds, TimeUnit.SECONDS);
     }
 }

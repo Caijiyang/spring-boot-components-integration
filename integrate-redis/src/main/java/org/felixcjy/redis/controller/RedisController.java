@@ -1,25 +1,23 @@
-package org.felixcjy.test.controller;
+package org.felixcjy.redis.controller;
 
-import org.felixcjy.test.service.RedisService;
+import lombok.AllArgsConstructor;
+import org.felixcjy.redis.service.RedisService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 /**
- * 用 API 的形式测试 Redis
+ * 模拟 Redis 操作的 Controller 实际项目并不会使用到
  *
  * @author: Felix(蔡济阳)
- * @since : 2025/3/9 12:16
+ * @since : 2025/3/9 11:50
  */
 @RestController
 @RequestMapping("/redis")
+@AllArgsConstructor
 public class RedisController {
 
     private final RedisService redisService;
-
-    public RedisController(RedisService redisService) {
-        this.redisService = redisService;
-    }
 
     @PostMapping("/set")
     public ResponseEntity<String> setValue(@RequestParam String key,
