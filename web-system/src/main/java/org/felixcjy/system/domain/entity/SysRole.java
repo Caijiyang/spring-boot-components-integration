@@ -1,9 +1,11 @@
 package org.felixcjy.system.domain.entity;
 
 import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
@@ -12,9 +14,11 @@ import java.time.LocalDateTime;
  */
 @Data
 @TableName("sys_role")
-public class SysRole {
+public class SysRole implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     /** 角色ID */
-    @TableField("role_id")
+    @TableId("role_id")
     private String roleId;
 
     /** 角色标识 */
@@ -33,7 +37,7 @@ public class SysRole {
     @TableField("remark")
     private String remark;
 
-    /** 角色状态 */
+    /** 角色状态 0:正常 1:停用*/
     @TableField("status")
     private char status;
 

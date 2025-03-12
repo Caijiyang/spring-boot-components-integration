@@ -5,6 +5,7 @@ import lombok.Getter;
 /**
  * 统一错误类型枚举
  * 用于预定义系统错误码和提示消息
+ *
  * @author: Felix(蔡济阳)
  * @since : 2025/2/23 16:44
  */

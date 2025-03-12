@@ -25,6 +25,7 @@
    - 加入驱动和配置即可。
  - [x] Swagger
    - 使用 SpringDoc OpenAPI 的方式整合了 Swagger 3 ，在测试模块中包含了使用案例。
+ - [ ] Spring Boot Validation 参数校验
 
 缓存
 

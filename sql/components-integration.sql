@@ -8,7 +8,7 @@ create table sys_user (
     user_name            varchar(332) not null     comment '姓名',
     nick_name            varchar(332) not null     comment '昵称',
     sex                  char(1)      default ''   comment '用户性别',
-    password             varchar(100) default ''   comment '密码',
+    password             varchar(255) default ''   comment '密码',
     phone_number         varchar(11)  default ''   comment '手机号码',
     email                varchar(50)  default ''   comment '用户邮箱',
     user_type            varchar(2)   default ''   comment '用户类型 ',
@@ -46,6 +46,15 @@ create table sys_role (
 -- ----------------------------
 -- 初始化-角色信息表数据
 -- ----------------------------
-insert into sys_role values ('1', 'admin', '超级管理员', 1, '', 0, 0, 'admin', sysdate(), null, null);
-insert into sys_role values ('2', 'common', '普通角色', 2, '', 0, 0, 'admin', sysdate(), null, null);
+insert into sys_role values ('0', 'ADMIN', '超级管理员', 1, '', 0, 0, 'admin', sysdate(), null, null);
+insert into sys_role values ('1', 'COMMON', '普通角色', 2, '', 0, 0, 'admin', sysdate(), null, null);
 
+-- ----------------------------
+-- 3、用户和角色关联表  用户 1-N 角色
+-- ----------------------------
+drop table if exists sys_user_role;
+create table sys_user_role (
+    user_id varchar(64) not null comment '用户ID',
+    role_id varchar(64) not null comment '角色ID',
+    primary key(user_id, role_id)
+) engine = innodb comment = '用户和角色关联表';
