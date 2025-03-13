@@ -9,6 +9,8 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
+ * 角色表
+ *
  * @author: Felix(蔡济阳)
  * @since : 2025/2/24 20:09
  */

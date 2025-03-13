@@ -6,6 +6,8 @@ import lombok.Data;
 import java.util.List;
 
 /**
+ * 分页数据类
+ *
  * @author: Felix(蔡济阳)
  * @since : 2025/2/24 20:17
  */

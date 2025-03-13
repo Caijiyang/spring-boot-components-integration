@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * 权限处理业务逻辑接口
+ *
  * @author: Felix(蔡济阳)
  * @since : 2025/3/12 22:42
  */

@@ -6,6 +6,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
+ * Swagger 文档配置
+ *
  * @author: Felix(蔡济阳)
  * @since : 2025/3/10 09:28
  */
@@ -17,6 +19,6 @@ public class OpenApiConfig {
                 .info(new Info()
                         .title("多模块 API 文档")
                         .version("1.0")
-                        .description("Spring Boot 2.7.x + OpenAPI 3"));
+                        .description("Spring Boot 2.7.18 + OpenAPI 3"));
     }
 }

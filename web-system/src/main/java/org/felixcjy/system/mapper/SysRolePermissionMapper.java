@@ -8,6 +8,8 @@ import org.felixcjy.system.domain.entity.SysRolePermission;
 import java.util.List;
 
 /**
+ * 角色权限关联表 Mapper
+ *
  * @author: Felix(蔡济阳)
  * @since : 2025/3/12 22:31
  */

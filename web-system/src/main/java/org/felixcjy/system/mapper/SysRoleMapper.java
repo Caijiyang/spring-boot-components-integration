@@ -8,6 +8,8 @@ import org.apache.ibatis.annotations.Param;
 import org.felixcjy.system.domain.entity.SysRole;
 
 /**
+ * 角色表 Mapper
+ *
  * @author: Felix(蔡济阳)
  * @since : 2025/2/24 20:10
  */

@@ -1,10 +1,10 @@
 package org.felixcjy.system.domain.dto;
 
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
 
 /**
+ * 权限角色数据传输类
+ *
  * @author: Felix(蔡济阳)
  * @since : 2025/3/12 22:51
  */

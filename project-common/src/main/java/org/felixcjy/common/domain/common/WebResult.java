@@ -6,6 +6,8 @@ import org.felixcjy.common.domain.enums.ErrorType;
 import java.io.Serializable;
 
 /**
+ * HTTP 响应返回请求结果
+ *
  * @author: Felix(蔡济阳)
  * @since : 2025/2/24 21:55
  */

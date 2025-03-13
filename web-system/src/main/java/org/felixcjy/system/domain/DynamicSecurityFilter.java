@@ -18,6 +18,8 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * Spring Security 配置动态过滤器
+ *
  * @author: Felix(蔡济阳)
  * @since : 2025/3/13 12:25
  */

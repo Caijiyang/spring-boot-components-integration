@@ -8,6 +8,8 @@ import lombok.Data;
 import java.io.Serializable;
 
 /**
+ * 权限表实体
+ *
  * @author: Felix(蔡济阳)
  * @since : 2025/3/12 22:25
  */

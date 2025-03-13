@@ -1,13 +1,14 @@
 package org.felixcjy.system.domain.entity;
 
 import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 import java.io.Serializable;
 
 /**
+ * 用户角色表
+ *
  * @author: Felix(蔡济阳)
  * @since : 2025/3/12 17:30
  */

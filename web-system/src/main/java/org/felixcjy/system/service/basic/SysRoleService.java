@@ -5,6 +5,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import org.felixcjy.system.domain.entity.SysRole;
 
 /**
+ * 角色数据处理接口
+ *
  * @author: Felix(蔡济阳)
  * @since : 2025/2/24 20:14
  */

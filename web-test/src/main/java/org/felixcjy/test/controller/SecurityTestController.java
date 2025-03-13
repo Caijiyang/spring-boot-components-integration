@@ -1,12 +1,14 @@
 package org.felixcjy.test.controller;
 
-/**
- * @author: Felix(蔡济阳)
- * @since : 2025/3/12 12:45
- */
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * Spring Security 测试
+ *
+ * @author: Felix(蔡济阳)
+ * @since : 2025/3/12 12:45
+ */
 @RestController
 public class SecurityTestController {
 

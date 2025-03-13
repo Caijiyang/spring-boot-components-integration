@@ -9,6 +9,7 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 /**
  * 配置 RedisTemplate 序列化
+ *
  * @author: Felix(蔡济阳)
  * @since : 2025/3/9 08:57
  */

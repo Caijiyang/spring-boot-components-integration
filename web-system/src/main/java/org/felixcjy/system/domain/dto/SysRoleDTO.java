@@ -1,12 +1,10 @@
 package org.felixcjy.system.domain.dto;
 
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
 
-import java.time.LocalDateTime;
-
 /**
+ * 角色数据，仅包含必要的常用信息
+ *
  * @author: Felix(蔡济阳)
  * @since : 2025/3/12 16:37
  */
@@ -24,6 +22,6 @@ public class SysRoleDTO {
     /** 备注 */
     private String remark;
 
-    /** 角色状态 0:正常 1:停用*/
+    /** 角色状态 0:正常 1:停用 */
     private char status;
 }

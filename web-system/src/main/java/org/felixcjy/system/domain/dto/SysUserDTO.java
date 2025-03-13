@@ -1,7 +1,5 @@
 package org.felixcjy.system.domain.dto;
 
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
 
 import javax.validation.constraints.Email;
@@ -10,6 +8,8 @@ import javax.validation.constraints.Size;
 import java.util.Set;
 
 /**
+ * 用户数据传输类
+ *
  * @author: Felix(蔡济阳)
  * @since : 2025/3/12 15:00
  */

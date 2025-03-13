@@ -7,6 +7,8 @@ import org.felixcjy.system.domain.entity.SysRolePermission;
 import java.util.List;
 
 /**
+ * 角色权限数据处理接口
+ *
  * @author: Felix(蔡济阳)
  * @since : 2025/3/12 22:31
  */

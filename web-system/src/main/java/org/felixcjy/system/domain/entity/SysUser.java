@@ -9,13 +9,15 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
+ * 用户表
+ *
  * @author: Felix(蔡济阳)
  * @since : 2025/3/12 13:34
  */
 @Data
 @TableName("sys_user")
 public class SysUser implements Serializable {
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 5434720000412710457L;
 
     /** 用户ID */
     @TableId("user_id")

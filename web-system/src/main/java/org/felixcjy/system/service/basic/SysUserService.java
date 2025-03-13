@@ -5,6 +5,8 @@ import org.felixcjy.system.domain.dto.SysUserDTO;
 import org.felixcjy.system.domain.entity.SysUser;
 
 /**
+ * 用户数据处理接口
+ *
  * @author: Felix(蔡济阳)
  * @since : 2025/3/12 13:35
  */

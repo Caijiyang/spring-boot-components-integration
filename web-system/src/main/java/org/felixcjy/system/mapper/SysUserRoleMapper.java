@@ -5,6 +5,8 @@ import org.apache.ibatis.annotations.Mapper;
 import org.felixcjy.system.domain.entity.SysUserRole;
 
 /**
+ * 用户角色表 Mapper
+ *
  * @author: Felix(蔡济阳)
  * @since : 2025/3/12 17:38
  */

@@ -16,6 +16,8 @@ import org.springframework.security.web.access.intercept.FilterSecurityIntercept
 import static org.springframework.security.config.Customizer.withDefaults;
 
 /**
+ * Spring Security 配置类
+ *
  * @author: Felix(蔡济阳)
  * @since : 2025/3/12 10:44
  */

@@ -10,11 +10,13 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 
 /**
+ * 角色管理 Controller
+ *
  * @author: Felix(蔡济阳)
  * @since : 2025/2/23 17:59
  */
 @RestController
-@RequestMapping("/role")
+@RequestMapping("/system/role")
 @AllArgsConstructor
 public class RoleManageController {
     private final static Logger logger = LoggerFactory.getLogger(RoleManageController.class);
