@@ -43,7 +43,6 @@
  - [x] Spring Security
    - 已经动态整合角色、权限的管理！详情见 system 分支和 Git 记录
  - [ ] JWT
- - [ ] AES 工具类
 
 消息队列
 
