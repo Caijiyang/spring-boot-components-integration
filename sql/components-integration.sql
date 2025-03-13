@@ -58,3 +58,37 @@ create table sys_user_role (
     role_id varchar(64) not null comment '角色ID',
     primary key(user_id, role_id)
 ) engine = innodb comment = '用户和角色关联表';
+
+-- ----------------------------
+-- 4、权限表
+-- ----------------------------
+drop table if exists sys_permission;
+create table sys_permission (
+    permission_id   varchar(64) not null comment '权限ID',
+    permission_name varchar(64) not null comment '权限名',
+    url_pattern     varchar(64) not null comment '权限路径',
+    primary key(permission_id)
+) engine = innodb comment = '权限表';
+
+-- ----------------------------
+-- 初始化-权限表数据
+-- ----------------------------
+insert into sys_permission values ('0', '管理员可访问', '/admin/**');
+insert into sys_permission values ('1', '管理员和普通用户均可访问', '/common/**');
+
+-- ----------------------------
+-- 5、角色权限关联表 角色 N - N 权限
+-- ----------------------------
+drop table if exists sys_role_permission;
+create table sys_role_permission (
+    permission_id   varchar(64) not null comment '权限ID',
+    role_id varchar(64) not null comment '角色ID',
+    primary key(permission_id, role_id)
+) engine = innodb comment = '角色权限关联表';
+
+-- ----------------------------
+-- 初始化-角色权限关联表数据
+-- ----------------------------
+insert into sys_role_permission values ('0', '0');
+insert into sys_role_permission values ('1', '0');
+insert into sys_role_permission values ('1', '1');

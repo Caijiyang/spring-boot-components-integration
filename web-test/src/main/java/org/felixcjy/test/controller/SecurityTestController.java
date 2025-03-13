@@ -29,5 +29,4 @@ public class SecurityTestController {
     public String commonEndpoint() {
         return "COMMON 和 ADMIN 都可以访问";
     }
-
 }

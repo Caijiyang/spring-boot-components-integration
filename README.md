@@ -25,7 +25,8 @@
    - 加入驱动和配置即可。
  - [x] Swagger
    - 使用 SpringDoc OpenAPI 的方式整合了 Swagger 3 ，在测试模块中包含了使用案例。
- - [ ] Spring Boot Validation 参数校验
+ - [x] Spring Boot Validation 参数校验
+   - 可见 system 模块新增用户接口校验
 
 缓存
 
@@ -39,7 +40,8 @@
 
 权限 & 加密
 
- - [ ] Spring Security
+ - [x] Spring Security
+   - 已经动态整合角色、权限的管理！详情见 system 分支和 Git 记录
  - [ ] JWT
  - [ ] AES 工具类
 
