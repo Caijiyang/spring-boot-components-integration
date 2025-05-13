@@ -17,6 +17,7 @@
     <module>web-system</module>
     <module>web-test</module>
     <module>integrate-redis</module>
+    <module>integrate-minio</module>
     <!-- <module>integrate-rabbit-mq</module> -->
     <!-- <module>integrate-xxl-job</module> -->
     <!-- <module>integrate-mongo-db</module> -->
@@ -41,6 +42,7 @@
     <springdoc-openapi-ui.version>1.8.0</springdoc-openapi-ui.version>
     <springdoc-openapi-common.version>1.8.0</springdoc-openapi-common.version>
     <commons-collections4.version>4.4</commons-collections4.version>
+    <minio.version>8.5.17</minio.version>
   </properties>
 
   <dependencyManagement>
@@ -73,6 +75,13 @@
         <groupId>io.jsonwebtoken</groupId>
         <artifactId>jjwt</artifactId>
         <version>${jwt.version}</version>
+      </dependency>
+
+      <!-- 工具: minio -->
+      <dependency>
+        <groupId>io.minio</groupId>
+        <artifactId>minio</artifactId>
+        <version>${minio.version}</version>
       </dependency>
 
       <!-- 工具: SpringDoc -->

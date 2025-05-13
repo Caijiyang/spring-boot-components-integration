@@ -45,5 +45,12 @@
             <artifactId>project-common</artifactId>
             <version>0.1</version>
         </dependency>
+
+        <!-- 引入本地模块 -->
+        <dependency>
+            <groupId>org.felixcjy</groupId>
+            <artifactId>integrate-minio</artifactId>
+            <version>0.1</version>
+        </dependency>
     </dependencies>
 </project>

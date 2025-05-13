@@ -34,10 +34,13 @@ public class SecurityConfig {
         http
                 .authorizeRequests(auth -> auth
                         .antMatchers("/public").permitAll() // 允许所有人访问
+                        .antMatchers("/api/minio/**").permitAll() // 允许所有人访问
                         .anyRequest().authenticated() // 其他请求必须登录
                 )
                 .formLogin(withDefaults())
-                .httpBasic(withDefaults());
+                .httpBasic(withDefaults())
+                // .csrf().disable(); // 关闭 CSRF 保护（不推荐，仅用于测试或特定场景）
+                .csrf(csrf -> csrf.ignoringAntMatchers("/api/minio/**")); // 禁用 /minio/** 路径的 CSRF 保护
         // 添加动态权限过滤器
         http.addFilterBefore(dynamicSecurityFilter, FilterSecurityInterceptor.class);
         return http.build();
