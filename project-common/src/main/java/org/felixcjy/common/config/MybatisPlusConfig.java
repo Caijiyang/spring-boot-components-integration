@@ -15,9 +15,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @MapperScan({"org.felixcjy.**.mapper*"})
 public class MybatisPlusConfig {
-    /**
-     * 添加分页插件
-     */
+    /** 添加分页插件 */
     @Bean
     public MybatisPlusInterceptor mybatisPlusInterceptor() {
         MybatisPlusInterceptor interceptor = new MybatisPlusInterceptor();

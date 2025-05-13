@@ -27,6 +27,7 @@ import static org.springframework.security.config.Customizer.withDefaults;
 public class SecurityConfig {
     // 构造注入，Spring 会自动将 CustomUserDetailsService 注入到这里
     private final UserDetailsService userDetailsService;
+
     private final DynamicSecurityFilter dynamicSecurityFilter;
 
     @Bean

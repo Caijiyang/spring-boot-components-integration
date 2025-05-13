@@ -48,55 +48,44 @@ public class SwaggerController {
     }
 
     @GetMapping("/{userId}")
-    @Operation(
-            summary = "获取用户详情", // 接口简要描述
+    @Operation(summary = "获取用户详情", // 接口简要描述
             description = "根据用户ID查询用户详细信息" // 详细说明
     )
-    @ApiResponse(
-            responseCode = "200",
+    @ApiResponse(responseCode = "200",
             description = "成功获取用户",
             content = @Content(schema = @Schema(implementation = UserDTO.class))
     )
-    @ApiResponse(
-            responseCode = "404",
+    @ApiResponse(responseCode = "404",
             description = "用户不存在",
             content = @Content(schema = @Schema(implementation = ErrorResponse.class))
     )
-    public UserDTO getUser(
-            @PathVariable
-            @Parameter(description = "用户ID", required = true, example = "1001")
-            Long userId
-    ) {
+    public UserDTO getUser(@PathVariable
+                           @Parameter(description = "用户ID", required = true, example = "1001")
+                           Long userId) {
         // 业务逻辑
         return new UserDTO();
     }
 
     @PostMapping
     @Operation(summary = "创建用户")
-    @ApiResponse(
-            responseCode = "201",
+    @ApiResponse(responseCode = "201",
             description = "用户创建成功"
     )
-    public ResponseEntity<Void> createUser(
-            @RequestBody
-            @Parameter(description = "用户数据", required = true)
-            UserDTO userDTO
-    ) {
+    public ResponseEntity<Void> createUser(@RequestBody
+                                           @Parameter(description = "用户数据", required = true)
+                                           UserDTO userDTO) {
         // 业务逻辑
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 
     @GetMapping("/search")
     @Operation(summary = "搜索用户")
-    public List<UserDTO> searchUsers(
-            @RequestParam
-            @Parameter(description = "用户名关键字", example = "张")
-            String keyword,
-
-            @RequestParam(required = false, defaultValue = "1")
-            @Parameter(description = "页码", example = "1")
-            Integer page
-    ) {
+    public List<UserDTO> searchUsers(@RequestParam
+                                     @Parameter(description = "用户名关键字", example = "张")
+                                     String keyword,
+                                     @RequestParam(required = false, defaultValue = "1")
+                                     @Parameter(description = "页码", example = "1")
+                                     Integer page) {
         // 业务逻辑
         return Arrays.asList(new UserDTO());
     }

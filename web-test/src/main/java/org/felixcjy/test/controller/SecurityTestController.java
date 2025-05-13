@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class SecurityTestController {
-
     @GetMapping("/public")
     public String publicEndpoint() {
         return "这是一个公开端点，所有人都可以访问";
