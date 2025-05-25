@@ -1,2 +1,13 @@
 server:
   port: 8082
+
+logging:
+  file:
+    path: ./logs
+  level:
+    root: WARN
+    com.felixcjy: WARN
+    org.springframework: WARN
+    org.springframework.web: WARN
+    org.springframework.transaction.interceptor: WARN
+    org.springframework.jdbc.datasource.DataSourceTransactionManager: WARN

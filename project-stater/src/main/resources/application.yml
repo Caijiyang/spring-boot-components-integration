@@ -2,11 +2,15 @@ server:
   port: 8080
 
 logging:
+  file:
+    path: ./logs  # 可设置为绝对路径
   level:
     root: INFO
     com.felixcjy: DEBUG
     org.springframework: WARN
     org.springframework.web: DEBUG
+    org.springframework.transaction.interceptor: DEBUG
+    org.springframework.jdbc.datasource.DataSourceTransactionManager: DEBUG
 
 # 数据源配置
 spring:
@@ -92,6 +96,7 @@ springdoc:
     path: /swagger-ui.html # 修改 Swagger UI 路径
 
 mybatis-plus:
+  db-type: MYSQL
   mapper-locations: classpath*:mapper/**/*Mapper.xml
   typeAliasesPackage: org.felixcjy.**.domain.entity
   configuration:

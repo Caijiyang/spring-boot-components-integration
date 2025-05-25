@@ -5,6 +5,12 @@
     <!-- 日志输出格式 -->
 	<property name="LOG.PATTERN" value="%d{HH:mm:ss.SSS} [%thread] %-5level %logger{20} - [%method,%line] - %msg%n" />
 
+    <property name="APP_NAME" value="${spring.application.name:-app}" />
+    <property name="LOG_PATH" value="${LOG_PATH:-${logging.file.path:-./logs}}" />
+    <property name="MAX_HISTORY" value="30" />
+    <property name="MAX_FILE_SIZE" value="10MB" />
+
+
 	<!-- 控制台输出 -->
 	<appender name="console" class="ch.qos.logback.core.ConsoleAppender">
 		<encoder>
